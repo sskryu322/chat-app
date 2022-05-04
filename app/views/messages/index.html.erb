@@ -22,15 +22,23 @@
       <%= render "side_bar" %>
     </div>
   </div>
+
   <div class="main-container">
-    <div class="main-top">
+    <%= render "main_chat" %>
 
-    </div>
-    <div class="chat-main">
-      <%= render "main_chat" %>
-    </div>
-    <div class="main-bottom">
-
-    </div>
+    <form>
+      <div class="message">
+        <input class="message-text" type="text" placeholder="type a message">
+        <label class="form-image">
+          <span class="image-file">画像</span>
+          <input type="file" class="hidden">
+        </label>
+      </div>
+      <div class="send-message">
+        <input class="btn" type="submit" value="送信">
+      </div>
+    </form>
   </div>
+
+  
 </div>
