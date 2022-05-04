@@ -1,0 +1,44 @@
+<div class="wrapper">
+  <div class="side-bar">
+    <div class="side-top">
+      <div class="user-name">
+        <a href="#">Sasaki</a>
+      </div>
+      <div class="chat-create">
+        <a href="#">チャットを作成する</a>
+      </div>
+    </div>
+    <div class="side-bottom">
+      <div class="room">
+        <div class="room-name">
+          <a href="#">ルームネーム1</a>
+        </div>
+      </div>
+      <div class="room">
+        <div class="room-name">
+          <a href="#">ルームネーム2</a>
+        </div>
+      </div>
+      <%= render "side_bar" %>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <%= render "main_chat" %>
+
+    <form>
+      <div class="message">
+        <input class="message-text" type="text" placeholder="type a message">
+        <label class="form-image">
+          <span class="image-file">画像</span>
+          <input type="file" class="hidden">
+        </label>
+      </div>
+      <div class="send-message">
+        <input class="btn" type="submit" value="送信">
+      </div>
+    </form>
+  </div>
+
+  
+</div>
