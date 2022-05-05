@@ -1,28 +1,11 @@
 <div class="wrapper">
   <div class="side-bar">
-    <div class="side-top">
-      <div class="user-name">
-        <%= link_to current_user.name, edit_user_path(current_user) %>
-      </div>
-      <div class="chat-create">
-        <%= link_to "チャットを作成する", new_room_path %>
-      </div>
-    </div>
-    <div class="side-bottom">
-      <% current_user.rooms.each do |room| %>
-        <div class="room">
-          <div class="room-name">
-            <a href="#"><%= room.name %></a>
-          </div>
-        </div>
-      <% end %>
       <%= render "side_bar" %>
-    </div>
   </div>
 
+  
   <div class="main-container">
     <%= render "main_chat" %>
-
     <form>
       <div class="message">
         <input class="message-text" type="text" placeholder="type a message">
@@ -36,6 +19,4 @@
       </div>
     </form>
   </div>
-
-  
 </div>
