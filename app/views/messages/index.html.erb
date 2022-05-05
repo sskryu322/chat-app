@@ -7,6 +7,9 @@
   <div class="main-container">
     <%= render "main_chat" %>
     
+    <div class="chat-main">
+      <%= render partial: 'message', collection: @messages %>
+    </div>
     
     <%= form_with model: [@room, @message], class: 'form', local: true do |f| %> 
       <div class="message">
