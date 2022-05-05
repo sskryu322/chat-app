@@ -89,3 +89,8 @@ select {
   height: 80px;
   width: 100%;
 }
+
+/* 最後の行に以下を追加 バリデーションエラーメッセージのCSS崩れを修正*/
+.field_with_errors {
+  display: contents;
+}
